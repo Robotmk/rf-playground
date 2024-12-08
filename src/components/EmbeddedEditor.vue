@@ -51,12 +51,6 @@
           <!-- run buttons -->
           <div v-if="!editorStatus.loading" class="flex">
             <button
-              class="stroke mr-xsmall small flex middle"
-              aria-label="Share code"
-              @click="copyProject()">
-              <copy-icon size="1rem" color="white" />
-            </button>
-            <button
               class="theme flex middle"
               :class="editorStatus.running ? 'disabled' : 'bling'"
               @click="runRobotTest()">
@@ -223,20 +217,6 @@ export default {
   methods: {
     clickFn(ev) {
       if (this.$refs.fileDropdown && !this.$refs.fileDropdown.contains(ev.target)) this.filesDropdownOpen = false
-    },
-    async copyProject() {
-      const compProj = await this.getProjectLink()
-      const url = document.location.origin + '/embed/?codeProject=' + compProj
-      console.log(url.length)
-      if (url.length > 7400) {
-        this.copyMessage = { message: `Code to be shared is too long! ~${url.length - 7400} too many characters...`, success: false }
-        console.log(this.copyMessage.message)
-        await navigator.clipboard.writeText(url)
-      } else {
-        await navigator.clipboard.writeText(url)
-        this.copyMessage = { message: 'Link copied to clipboard!', success: true }
-        console.log(this.copyMessage.message)
-      }
     },
     async getProjectLink() {
       const isOfficialProject = this.projectsList.some(({ name }) => name === this.activeProjectName)
