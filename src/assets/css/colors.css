@@ -1,0 +1,109 @@
+/* brand colors */
+
+.color-theme {
+    color: var(--color-theme);
+}
+.bg-theme {
+    background-color: var(--color-theme);
+}
+
+.color-alert {
+    color: var(--color-alert);
+}
+.bg-alert {
+    background-color: var(--color-alert);
+}
+
+/* basic colors */
+
+.color-black {
+    color: var(--color-black);
+}
+.bg-black {
+    color-scheme: dark;
+    background-color: var(--color-black);
+}
+
+.color-grey-dark {
+    color: var(--color-grey-dark);
+}
+.bg-grey-dark {
+    color-scheme: dark;
+    background-color: var(--color-grey-dark);
+}
+
+.color-grey-darkest {
+    color: var(--color-background-darkmode);
+}
+.bg-grey-darkest {
+    color-scheme: dark;
+    background-color: var(--color-background-darkmode);
+}
+
+.color-grey {
+    color: var(--color-grey);
+}
+.bg-grey {
+    background-color: var(--color-grey);
+}
+
+.color-grey-light {
+    color: var(--color-grey-light);
+}
+.bg-grey-light {
+    background-color: var(--color-grey-light);
+}
+
+.color-white {
+    color: var(--color-white) !important;
+}
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.color-green {
+    color: var(--color-green);
+}
+
+.color-background {
+    color: var(--color-background) !important;
+}
+.bg-background {
+    background-color: var(--color-background);
+}
+
+.hover-bright:hover {
+    filter: brightness(1.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+
+    .bg-white-darkmode {
+        background-color: var(--color-white);
+    }
+    .bg-grey-dark-darkmode {
+        color-scheme: dark;
+        background-color: var(--color-grey-dark);
+    }
+    .color-white-darkmode {
+        color: var(--color-white);
+    }
+}
+
+/* updated color classes for more straightforward darkmode support */
+.color-text {
+    color: var(--color-text);
+}
+.color-link {
+    color: var(--color-link);
+}
+.bg-secondary {
+    background-color: var(--color-background-secondary);
+}
