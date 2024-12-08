@@ -234,7 +234,7 @@ export default {
       if (this.activeTab !== 'builtin') this.sortBy = 'Stars'
       else this.sortBy = 'Name'
       if (!this.eventSent) {
-        window.plausible('Interact', { props: { element: 'Resources' } })
+        // window.plausible('Interact', { props: { element: 'Resources' } })
         this.eventSent = true
       }
       const newUrl = `${window.location.href.split('?')[0].split('#')[0]}?tab=${this.activeTab}#resources`
@@ -242,7 +242,7 @@ export default {
     },
     showAll() {
       if (!this.eventSent) {
-        window.plausible('Interact', { props: { element: 'Resources' } })
+        // window.plausible('Interact', { props: { element: 'Resources' } })
         this.eventSent = true
       }
     }

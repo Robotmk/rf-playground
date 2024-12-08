@@ -132,10 +132,10 @@ export default {
         top: el.offsetTop,
         behavior: 'smooth'
       })
-      window.plausible('Nav click', { props: { section: itemId } })
+      // window.plausible('Nav click', { props: { section: itemId } })
     },
     linkClick(name) {
-      window.plausible('Nav click', { props: { section: name } })
+      // window.plausible('Nav click', { props: { section: name } })
     },
     setLang(lang) {
       this.$i18n.locale = lang

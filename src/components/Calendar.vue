@@ -190,7 +190,7 @@ export default {
   },
   async mounted() {
     this.$refs.container.addEventListener('click', () => {
-      window.plausible('Interact', { props: { section: 'Calendar' } })
+      // window.plausible('Interact', { props: { section: 'Calendar' } })
     }, { passive: true })
     this.events = (await getEvents()).sort((a, b) => {
       if (new Date(a.date) < new Date(b.date)) return -1

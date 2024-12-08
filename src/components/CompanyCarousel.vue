@@ -117,7 +117,7 @@ export default {
   watch: {
     activeCompanyIndex() {
       if (!this.eventSent) {
-        window.plausible('Interact', { props: { element: 'Testimonials' } })
+        // window.plausible('Interact', { props: { element: 'Testimonials' } })
         this.eventSent = true
       }
     }

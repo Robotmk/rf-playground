@@ -96,7 +96,7 @@ export default {
   watch: {
     activeTab() {
       if (!this.eventSent) {
-        window.plausible('Interact', { props: { element: 'Learning' } })
+        // window.plausible('Interact', { props: { element: 'Learning' } })
         this.eventSent = true
       }
       if (!this.defaultTab) {

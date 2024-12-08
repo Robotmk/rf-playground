@@ -506,7 +506,7 @@ export default {
       setTimeout(() => { this.editorStatus.changingTab = false }, 300)
     },
     runRobotTest(init = false, tcName = '') {
-      window.plausible('Run code', { props: { projectName: `${this.activeProjectName}${this.editorStatus.projectModified ? ' (modified)' : ''}` } })
+      // window.plausible('Run code', { props: { projectName: `${this.activeProjectName}${this.editorStatus.projectModified ? ' (modified)' : ''}` } })
       this.logSrc = null
       this.reportSrc = null
       this.output = ' '
