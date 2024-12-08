@@ -17,55 +17,55 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/foundation',
-    name: 'Foundation',
-    component: Foundation
-  },
-  {
-    path: '/rpa',
-    name: 'RPA',
-    component: RPA,
-    meta: { title: 'RPA' }
-  },
-  {
-    path: '/test-automation',
-    name: 'Test Automation',
-    component: TestAutomation,
-    meta: { title: 'Test Automation' }
-  },
-  {
-    path: '/foundation',
-    name: 'Foundation',
-    component: Foundation,
-    meta: { title: 'Foundation' }
-  },
-  {
-    path: '/robot-framework-foundation',
-    redirect: { name: 'Foundation' }
-  },
-  {
-    path: '/privacy-policy',
-    name: 'PrivacyPolicy',
-    component: PrivacyPolicy,
-    meta: { title: 'Privacy Policy' }
-  },
-  {
-    path: '/code-of-conduct',
-    redirect: { name: 'CoC' }
-  },
-  {
-    path: '/code-of-ethics',
-    name: 'CoC',
-    component: CoC,
-    meta: { title: 'Code of Ethics' }
-  },
-  {
-    path: '/users',
-    name: 'Users',
-    component: Users,
-    meta: { title: 'Users' }
-  },
+  // {
+  //   path: '/foundation',
+  //   name: 'Foundation',
+  //   component: Foundation
+  // },
+  // {
+  //   path: '/rpa',
+  //   name: 'RPA',
+  //   component: RPA,
+  //   meta: { title: 'RPA' }
+  // },
+  // {
+  //   path: '/test-automation',
+  //   name: 'Test Automation',
+  //   component: TestAutomation,
+  //   meta: { title: 'Test Automation' }
+  // },
+  // {
+  //   path: '/foundation',
+  //   name: 'Foundation',
+  //   component: Foundation,
+  //   meta: { title: 'Foundation' }
+  // },
+  // {
+  //   path: '/robot-framework-foundation',
+  //   redirect: { name: 'Foundation' }
+  // },
+  // {
+  //   path: '/privacy-policy',
+  //   name: 'PrivacyPolicy',
+  //   component: PrivacyPolicy,
+  //   meta: { title: 'Privacy Policy' }
+  // },
+  // {
+  //   path: '/code-of-conduct',
+  //   redirect: { name: 'CoC' }
+  // },
+  // {
+  //   path: '/code-of-ethics',
+  //   name: 'CoC',
+  //   component: CoC,
+  //   meta: { title: 'Code of Ethics' }
+  // },
+  // {
+  //   path: '/users',
+  //   name: 'Users',
+  //   component: Users,
+  //   meta: { title: 'Users' }
+  // },
   {
     path: '/code',
     name: 'Code',
